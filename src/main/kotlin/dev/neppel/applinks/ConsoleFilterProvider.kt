@@ -31,7 +31,7 @@ class ConsoleFilter(val project: Project, val scope: GlobalSearchScope) : Filter
     }
 
     companion object {
-        private val pattern = Regex("""(chart://#/chart/.*/[0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}/[STDWM](15|5|2|1))""")
+        private val pattern = Regex("""(chart://#/chart/.*/[0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}/[STDWM](15|5|2|1)/[0-9]{0,3})""")
     }
 }
 
